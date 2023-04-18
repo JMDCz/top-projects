@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <script>
+
+    const options = ["Rock", "Paper", "Scissors"]
+
+    function getComputerChoice (options) {
+        const random = Math.floor(Math.random() * options.length);
+            if (random === 0) {
+                console.log("Rock");
+
+            }   else if (random === 1) {
+                console.log("Paper")
+
+            }   else if (random === 2) {
+                console.log("Scissors")
+            }
+                return random
+    }
+
+        console.log(getComputerChoice(options))
+    </script>
+    
+</body>
+</html>
